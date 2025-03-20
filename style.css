@@ -1,0 +1,27 @@
+.terrain {
+    display: grid;
+    grid-template-columns: repeat(5, 16px);
+    transform: scale(5); /* 4배 확대 */
+    transform-origin: top left; /**확대 기준점 설정 */
+    image-rendering: pixelated; /* 확대 시 안티에이리어싱 비활성화 */
+}
+
+.mapTerrain {
+    width: 16px;
+    height: 16px;
+    background-size: 256px 256px; /* 3개 타일 크기 */
+}
+
+#typeS {
+    position: fixed;
+    top: 350px;    /* 화면 상단에서 20px 떨어진 위치 */
+    left: 225px;    /* 화면 가로 중앙에 배치 */
+    font-size: 25px;
+}
+
+#scoreLabel {
+    position: fixed;
+    top: 150px;    /* 화면 상단에서 20px 떨어진 위치 */
+    left: 450px;    /* 화면 가로 중앙에 배치 */
+    font-size: 25px;
+}
